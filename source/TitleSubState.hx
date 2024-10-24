@@ -1,6 +1,8 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxSubState;
+import flixel.input.keyboard.FlxKey;
 
 class TitleSubState extends FlxSubState
 {
@@ -12,5 +14,9 @@ class TitleSubState extends FlxSubState
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
+	}
+	function justPressed(key:FlxKey)
+	{
+		return FlxG.keys.anyJustPressed([key]);
 	}
 }

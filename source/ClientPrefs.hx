@@ -10,4 +10,7 @@ class ClientPrefs
 	public static var playerMP:Int = 20;
 	public static var playerItemHave:Array<String> = ["Nothing"];
 	public static var playerName:String = "...";
+	public static function init() {}
+
+	public static function load() {}
 }
